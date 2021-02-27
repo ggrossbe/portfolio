@@ -1,0 +1,307 @@
+PDF Autor: ''
+PDFBox Version: 1.8.16
+-----------------------------------------
+BNP Paribas S.A. NL Österreich KONTOAUSZUG
+5020 Salzburg,Oberndorfer Str.35 vom 17.02.2021
+Alter Saldo per 31.12.2020 4.811,83
+Summe der Gutschriften 5.236,45
+Summe der Lastschriften 10.044,14-
+Abs.: Postf. 150, 5021 Salzburg, Austria
+Neuer Saldo zu Ihren Gunsten
+Max Mustermann EUR 4,14
+Teststraße 17
+8600 Bruck an der Mur
+Konto-Nr.: 12345678901 Bankleitzahl: 19250
+Empfängerhinweis:
+Datum Buchungstext Wert Betrag
+04.01 Einlagen auf diesem Konto sind grundsätzlich 31.12 0,00
+erstattungsfähig. Ihre Sicherungseinrichtung ist
+der französische Einlagensicherungsfonds FGDR
+(Fonds de Garantie des Depots et de Resolution).
+Nähere Informationen finden Sie im Informationsbogen
+gem. §37a BWG(Homepage bzw. Filiale)
+04.01 Verkauf                          Depot   12345678901/20210104-36721429 07.01 0,00
+ISIN AU000000KP25 KORE POTASH PLC CDI/1
+05.01 Kauf                             Depot   12345678901/20210105-36106437 07.01 4.525,94-
+ISIN DE000LS9HP25 0% LANG+SCHWARZ O.E. INDEX
+07.01 Max Mustermann 07.01 5.200,00
+IBAN: AT27 1420 0200 1068 4197
+wikifolio
+REF: 142002101052FE10000008067363
+07.01 Verkauf                          Depot   12345678901/20210106-36706565 08.01 0,00
+ISIN AU000000LSA2 LACHLAN STAR LTD
+07.01 Verkauf                          Depot   12345678901/20210107-36239289 07.01 0,00
+ISIN AU0000048001 AL LEGAL GROUP LTD
+07.01 Depotgebührenabrechnung per 31.12.2020  20210106  36577750 31.12 33,84-
+DPNR.: 12345678901             28,20 ZUZüGL.              5,64 UST
+08.01 Verkauf                          Depot   12345678901/20210108-36304545 12.01 36,45
+ISIN CA95942C1041 WESTERN RES CORP.
+08.01 Kauf                             Depot   12345678901/20210108-36836678 11.01 2.653,37-
+ISIN DE000LS9BYR7 0% LANG+SCHWARZ O.E. INDEX
+08.01 Kauf                             Depot   12345678901/20210108-36506199 11.01 2.830,99-
+ISIN DE000LS9KKY3 0% LANG+SCHWARZ O.E. INDEX
+Neuer Saldo zu Ihren Gunsten 4,14
+AT56 1925 0650 4818 6001 DIRAAT2S 11 0001 1/1
+IBAN BIC Filiale Auszug Blatt/Gesamt
+R0042 32100 Doknr.: EK00-036-0048004812
+Abrechnung Handel
+BNP Paribas S.A. Niederlassung Österreich 36721429-4.1.2021
+Hello bank! Depot-Nr.: 12345678901
+Oberndorfer Straße 35 Max Mustermann
+5020 Salzburg 11/9865
+Hello bank!
+Herrn
+Max Mustermann
+Teststraße 17
+8600 Bruck an der Mur
+Wir haben für Sie am 4.1.2021 unten angeführtes Geschäft abgerechnet:
+Geschäftsart: Verkauf
+Auftrags-Nr.: 36782258-4.1.2021
+Auftragseingang: 30.12.2020-14:12:10
+Abgang: 550 Stk
+Titel: AU000000KP25  K o r e  P o t a s h PLC
+Reg.Chess Dep. Inter./1 o.N.
+Kurs: 0,0075 EUR
+Handelsplatz: XSTU     Stuttgart
+Handelszeit: 4.1.2021 um 08:12:13 Uhr
+Verwahrart: WR
+Positionsdaten: Loco: Frankfurt
+Kurswert: 4,13 EUR
+Grundgebühr: -4,13 EUR
+Zu Gunsten IBAN AT17 1925 0123 4567 8901 0,-- EUR
+Valuta 7.1.2021
+Schlusstag: 4.1.2021
+Kassatag: 6.1.2021
+KESt-Neubestand mit Anschaffungskosten nach dem gleitenden
+Durchschnittsverfahren § 27a Abs. 4 Zi 3 EStG 550 Stk
+steuerlicher Anschaffungswert: 503,47 EUR
+steuerlicher Veräußerungswert: 4,13 EUR
+steuerliche Berechnungsbasis: -499,34 EUR
+17.2.2021 Seite 1
+____________________________________________________________________________________
+Diese Mitteilung wird nicht unterschrieben. Irrtum vorbehalten! DVR: 1026402
+32101 Doknr.: EK00-036-0048004812
+Abrechnung Handel
+BNP Paribas S.A. Niederlassung Österreich 36106437-5.1.2021
+Hello bank! Depot-Nr.: 12345678901
+Oberndorfer Straße 35 Max Mustermann
+5020 Salzburg 11/9865
+Hello bank!
+Herrn
+Max Mustermann
+Teststraße 17
+8600 Bruck an der Mur
+Wir haben für Sie am 5.1.2021 unten angeführtes Geschäft abgerechnet:
+Geschäftsart: Kauf
+Auftrags-Nr.: 36134136-5.1.2021
+Auftragseingang: 5.1.2021-11:05:51
+Zugang: 11 Stk
+Titel: DE000LS9HP25  L a n g  &  S c h w arz AG
+O.End 15(15/unl.) WFNEBENWEU
+Kurs: 410,19 EUR
+Handelsplatz: Außerbörslich
+Handelszeit: 5.1.2021 um 11:05:51 Uhr
+Verwahrart: WR
+Positionsdaten: Loco: München
+Kurswert: -4.512,09 EUR
+Eigene Spesen: -7,90 EUR
+Grundgebühr: -5,95 EUR
+Zu Lasten IBAN AT17 1925 0123 4567 8901 -4.525,94 EUR
+Valuta 7.1.2021
+Schlusstag: 5.1.2021
+Kassatag: 7.1.2021
+Bestand nach Buchung:
+KESt-Neubestand mit Anschaffungskosten nach dem gleitenden
+Durchschnittsverfahren § 27a Abs. 4 Zi 3 EStG 11 Stk
+steuerlicher Anschaffungswert: 4.512,09 EUR
+17.2.2021 Seite 1
+____________________________________________________________________________________
+Diese Mitteilung wird nicht unterschrieben. Irrtum vorbehalten! DVR: 1026402
+32102 Doknr.: EK00-036-0048004812
+Abrechnung Handel
+BNP Paribas S.A. Niederlassung Österreich 36706565-6.1.2021
+Hello bank! Depot-Nr.: 12345678901
+Oberndorfer Straße 35 Max Mustermann
+5020 Salzburg 11/9865
+Hello bank!
+Herrn
+Max Mustermann
+Teststraße 17
+8600 Bruck an der Mur
+Wir haben für Sie am 6.1.2021 unten angeführtes Geschäft abgerechnet:
+Geschäftsart: Verkauf
+Auftrags-Nr.: 36533306-6.1.2021
+Auftragseingang: 30.12.2020-14:10:27
+Abgang: 666 Stk
+Titel: AU000000LSA2  L a c h l a n  S t a r Ltd.
+Registered Shares o.N.
+Kurs: 0,01 EUR
+Handelsplatz: XFRA     Deutsche Börse - Frankfurt
+Handelszeit: 6.1.2021 um 08:00:36 Uhr
+Verwahrart: WR
+Positionsdaten: Loco: Frankfurt
+Kurswert: 6,66 EUR
+Grundgebühr: -6,66 EUR
+Zu Gunsten IBAN AT17 1925 0123 4567 8901 0,-- EUR
+Valuta 8.1.2021
+Schlusstag: 6.1.2021
+Kassatag: 8.1.2021
+KESt-Neubestand mit Anschaffungskosten nach dem gleitenden
+Durchschnittsverfahren § 27a Abs. 4 Zi 3 EStG 666 Stk
+steuerlicher Anschaffungswert: 3.709,80 EUR
+steuerlicher Veräußerungswert: 6,66 EUR
+steuerliche Berechnungsbasis: -3.703,14 EUR
+17.2.2021 Seite 1
+____________________________________________________________________________________
+Diese Mitteilung wird nicht unterschrieben. Irrtum vorbehalten! DVR: 1026402
+32103 Doknr.: EK00-036-0048004812
+Abrechnung Handel
+BNP Paribas S.A. Niederlassung Österreich 36239289-7.1.2021
+Hello bank! Depot-Nr.: 12345678901
+Oberndorfer Straße 35 Max Mustermann
+5020 Salzburg 11/9865
+Hello bank!
+Herrn
+Max Mustermann
+Teststraße 17
+8600 Bruck an der Mur
+Wir haben für Sie am 7.1.2021 unten angeführtes Geschäft abgerechnet:
+Geschäftsart: Verkauf
+Auftrags-Nr.: 36992397-5.1.2021
+Auftragseingang: 5.1.2021-10:48:58
+Abgang: 13 Stk
+Titel: AU0000048001  A L  L e g a l  G r oup Ltd.
+Registered Shares o.N.
+Kurs: 0,283846 EUR
+Handelsplatz: XFRA     Deutsche Börse - Frankfurt
+Handelszeit: 5.1.2021 um 10:49:10 Uhr
+Verwahrart: WR
+Positionsdaten: Loco: Frankfurt
+Kurswert: 3,69 EUR
+Grundgebühr: -3,69 EUR
+Zu Gunsten IBAN AT17 1925 0123 4567 8901 0,-- EUR
+Valuta 7.1.2021
+Schlusstag: 5.1.2021
+Kassatag: 7.1.2021
+KESt-Neubestand mit Anschaffungskosten nach dem gleitenden
+Durchschnittsverfahren § 27a Abs. 4 Zi 3 EStG 13 Stk
+steuerlicher Anschaffungswert: 507,25 EUR
+steuerlicher Veräußerungswert: 3,69 EUR
+steuerliche Berechnungsbasis: -503,56 EUR
+17.2.2021 Seite 1
+____________________________________________________________________________________
+Diese Mitteilung wird nicht unterschrieben. Irrtum vorbehalten! DVR: 1026402
+32104 Doknr.: EK00-036-0048004812
+Abrechnung Handel
+BNP Paribas S.A. Niederlassung Österreich 36304545-8.1.2021
+Hello bank! Depot-Nr.: 12345678901
+Oberndorfer Straße 35 Max Mustermann
+5020 Salzburg 11/9865
+Hello bank!
+Herrn
+Max Mustermann
+Teststraße 17
+8600 Bruck an der Mur
+Wir haben für Sie am 8.1.2021 unten angeführtes Geschäft abgerechnet:
+Geschäftsart: Verkauf
+Auftrags-Nr.: 36909772-8.1.2021
+Auftragseingang: 5.1.2021-10:53:11
+Abgang: 440 Stk
+Titel: CA95942C1041  W e s t e r n  R e s ources Corp.
+Registered Shares o.N.
+Kurs: 0,113 EUR
+Handelsplatz: XSTU     Stuttgart
+Handelszeit: 8.1.2021 um 15:28:31 Uhr
+Verwahrart: WR
+Positionsdaten: Loco: Frankfurt
+Kurswert: 49,72 EUR
+Fremde Spesen: -5,23 EUR
+Eigene Spesen: -0,09 EUR
+Grundgebühr: -7,95 EUR
+Zu Gunsten IBAN AT17 1925 0123 4567 8901 36,45 EUR
+Valuta 12.1.2021
+Schlusstag: 8.1.2021
+Kassatag: 12.1.2021
+KESt-Neubestand mit Anschaffungskosten nach dem gleitenden
+Durchschnittsverfahren § 27a Abs. 4 Zi 3 EStG 440 Stk
+steuerlicher Anschaffungswert: 1.851,10 EUR
+steuerlicher Veräußerungswert: 49,72 EUR
+steuerliche Berechnungsbasis: -1.801,38 EUR
+17.2.2021 Seite 1
+____________________________________________________________________________________
+Diese Mitteilung wird nicht unterschrieben. Irrtum vorbehalten! DVR: 1026402
+32105 Doknr.: EK00-036-0048004812
+Abrechnung Handel
+BNP Paribas S.A. Niederlassung Österreich 36836678-8.1.2021
+Hello bank! Depot-Nr.: 12345678901
+Oberndorfer Straße 35 Max Mustermann
+5020 Salzburg 11/9865
+Hello bank!
+Herrn
+Max Mustermann
+Teststraße 17
+8600 Bruck an der Mur
+Wir haben für Sie am 8.1.2021 unten angeführtes Geschäft abgerechnet:
+Geschäftsart: Kauf
+Auftrags-Nr.: 36854577-8.1.2021
+Auftragseingang: 8.1.2021-16:03:16
+Zugang: 8 Stk
+Titel: DE000LS9BYR7  L a n g  &  S c h w arz AG
+O.End 14(14/unl.) WFDIVSTARS
+Kurs: 330,35 EUR
+Handelsplatz: Außerbörslich
+Handelszeit: 8.1.2021 um 16:03:16 Uhr
+Verwahrart: WR
+Positionsdaten: Loco: München
+Kurswert: -2.642,80 EUR
+Eigene Spesen: -4,62 EUR
+Grundgebühr: -5,95 EUR
+Zu Lasten IBAN AT17 1925 0123 4567 8901 -2.653,37 EUR
+Valuta 11.1.2021
+Schlusstag: 8.1.2021
+Kassatag: 11.1.2021
+Bestand nach Buchung:
+KESt-Neubestand mit Anschaffungskosten nach dem gleitenden
+Durchschnittsverfahren § 27a Abs. 4 Zi 3 EStG 8 Stk
+steuerlicher Anschaffungswert: 2.642,80 EUR
+17.2.2021 Seite 1
+____________________________________________________________________________________
+Diese Mitteilung wird nicht unterschrieben. Irrtum vorbehalten! DVR: 1026402
+32106 Doknr.: EK00-036-0048004812
+Abrechnung Handel
+BNP Paribas S.A. Niederlassung Österreich 36506199-8.1.2021
+Hello bank! Depot-Nr.: 12345678901
+Oberndorfer Straße 35 Max Mustermann
+5020 Salzburg 11/9865
+Hello bank!
+Herrn
+Max Mustermann
+Teststraße 17
+8600 Bruck an der Mur
+Wir haben für Sie am 8.1.2021 unten angeführtes Geschäft abgerechnet:
+Geschäftsart: Kauf
+Auftrags-Nr.: 36368498-8.1.2021
+Auftragseingang: 8.1.2021-14:16:09
+Zugang: 5 Stk
+Titel: DE000LS9KKY3  L a n g  &  S c h w arz AG
+O.End 16(17/unl.) WF00JT1371
+Kurs: 564,02 EUR
+Handelsplatz: Außerbörslich
+Handelszeit: 8.1.2021 um 14:16:09 Uhr
+Verwahrart: WR
+Positionsdaten: Loco: München
+Kurswert: -2.820,10 EUR
+Eigene Spesen: -4,94 EUR
+Grundgebühr: -5,95 EUR
+Zu Lasten IBAN AT17 1925 0123 4567 8901 -2.830,99 EUR
+Valuta 11.1.2021
+Schlusstag: 8.1.2021
+Kassatag: 11.1.2021
+Bestand nach Buchung:
+KESt-Neubestand mit Anschaffungskosten nach dem gleitenden
+Durchschnittsverfahren § 27a Abs. 4 Zi 3 EStG 5 Stk
+steuerlicher Anschaffungswert: 2.820,10 EUR
+17.2.2021 Seite 1
+____________________________________________________________________________________
+Diese Mitteilung wird nicht unterschrieben. Irrtum vorbehalten! DVR: 1026402
+32107 Doknr.: EK00-036-0048004812

@@ -1,0 +1,66 @@
+PDF Autor: ''
+PDFBox Version: 1.8.16
+-----------------------------------------
+BNP Paribas S.A. NL Österreich KONTOAUSZUG
+5020 Salzburg, Elisabethstr. 22 vom 14.08.2020
+Alter Saldo per 13.05.2020 17,14
+Summe der Gutschriften 7.808,19
+Summe der Lastschriften 4,50-
+Abs.: Postf. 150, 5021 Salzburg, Austria
+Neuer Saldo zu Ihren Gunsten
+Max Mustermann EUR 7.820,83
+Teststraße 17
+8600 Bruck an der Mur
+Konto-Nr.: 65048186001 Bankleitzahl: 19250
+Empfängerhinweis:
+Datum Buchungstext Wert Betrag
+30.06 Abschluss 30.06 4,50-
+Kontoführungsgebühr                          4,50-
+Wir bitten Sie, Ihre Reklamationen gemäß Ziffer 16
+unserer AGB innerhalb von zwei Monaten an uns zu richten.
+12.08 Verkauf                          Depot   65848186006/20200812-36535113 14.08 7.808,19
+ISIN AU000000SAR9 SARACEN MINERAL HLDGS
+Neuer Saldo zu Ihren Gunsten 7.820,83
+AT56 1925 0650 4818 6001 DIRAAT2S 11 0003 1/1
+IBAN BIC Filiale Auszug Blatt/Gesamt
+R0042 26561 Doknr.: EK00-036-0365009133
+Abrechnung Handel
+BNP Paribas S.A. Niederlassung Österreich 36535113-12.8.2020
+Hello bank! Depot-Nr.: 65848186006
+Oberndorfer Straße 35 Max Mustermann
+5020 Salzburg 11/9865
+Hello bank!
+Herrn
+Max Mustermann
+Teststraße 17
+8600 Bruck an der Mur
+Wir haben für Sie am 12.8.2020 unten angeführtes Geschäft abgerechnet:
+Geschäftsart: Verkauf
+Auftrags-Nr.: 36389806-12.8.2020
+Auftragseingang: 13.7.2020-16:05:56
+Abgang: 3.200 Stk
+Titel: AU000000SAR9  S a r a c e n  M i n eral Holdings Ltd.
+Registered Shares o.N.
+Kurs: 3,21 EUR
+Handelsplatz: Außerbörslich
+Handelszeit: 12.8.2020 um 08:34:20 Uhr
+Verwahrart: WR
+Positionsdaten: Loco: Frankfurt
+Kurswert: 10.272,-- EUR
+Kapitalertragsteuer: -2.440,88 EUR
+Eigene Spesen: -17,98 EUR
+Grundgebühr: -4,95 EUR
+Zu Gunsten IBAN AT17 1925 0123 4567 8901 7.808,19 EUR
+Valuta 14.8.2020
+Schlusstag: 12.8.2020
+Kassatag: 14.8.2020
+Die KESt-Abfuhr erfolgt an das Finanzamt Wien (FA09).
+KESt-Neubestand mit Anschaffungskosten nach dem gleitenden
+Durchschnittsverfahren § 27a Abs. 4 Zi 3 EStG 3.200 Stk
+steuerlicher Anschaffungswert: 1.396,07 EUR
+steuerlicher Veräußerungswert: 10.272,-- EUR
+steuerpflichtiger Kursgewinn: 8.875,93 EUR
+14.8.2020 Seite 1
+____________________________________________________________________________________
+Diese Mitteilung wird nicht unterschrieben. Irrtum vorbehalten! DVR: 1026402
+26562 Doknr.: EK00-036-0365009133

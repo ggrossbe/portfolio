@@ -38,7 +38,7 @@ public class HelloBankPDFExtractor extends AbstractPDFExtractor
         DocumentType type = new DocumentType("Geschäftsart: Kauf");
         this.addDocumentTyp(type);
 
-        Block block = new Block("Geschäftsart: Kauf");
+        Block block = new Block("Gesch.ftsart: Kauf", "^\\d+.\\d+.\\d{4}+ Seite \\d+");
         type.addBlock(block);
         block.set(new Transaction<BuySellEntry>()
 
@@ -49,7 +49,8 @@ public class HelloBankPDFExtractor extends AbstractPDFExtractor
                         })
 
                         .section("isin", "name", "currency") //
-                        .match("Titel: (?<isin>\\S*) (?<name>.*)$") //
+                        .match("^Titel: (?<isin>\\S*) (?<name>.*)$") //
+                        .match("^(?<nameContinued>.*)$")
                         .match("Kurs: [\\d+,.]* (?<currency>\\w{3}+) *")
                         .assign((t, v) -> t.setSecurity(getOrCreateSecurity(v)))
 
@@ -58,7 +59,7 @@ public class HelloBankPDFExtractor extends AbstractPDFExtractor
                         .assign((t, v) -> t.setShares(asShares(v.get("shares"))))
 
                         .section("amount", "currency") //
-                        .match("Zu Lasten .* -(?<amount>[\\d+,.]*) (?<currency>\\w{3}+) *$").assign((t, v) -> {
+                        .match("Zu Lasten .* -(?<amount>[\\d+,.-]*) (?<currency>\\w{3}+) *$").assign((t, v) -> {
                             t.setAmount(asAmount(v.get("amount")));
                             t.setCurrencyCode(asCurrencyCode(v.get("currency")));
                         })
@@ -69,19 +70,40 @@ public class HelloBankPDFExtractor extends AbstractPDFExtractor
 
                         .section("fee", "currency") //
                         .optional() //
-                        .match("Grundgebühr: -(?<fee>[\\d+,.]*) (?<currency>\\w{3}+) *")
-                        .assign((t, v) -> t.getPortfolioTransaction()
+                        .match("Grundgeb.hr: -(?<fee>[\\d+,.-]*) (?<currency>\\w{3}+) *")
+                        .assign((t, v) -> {
+                          // System.out.println("****   Grundgebühr: fee = " + v.get("fee")
+                          //        + ", currency = " + v.get("currency"));
+                          t.getPortfolioTransaction()
                                         .addUnit(new Unit(Unit.Type.FEE,
                                                         Money.of(asCurrencyCode(v.get("currency")),
-                                                                        asAmount(v.get("fee"))))))
+                                                                        asAmount(v.get("fee")))));
+                        })
+
 
                         .section("fee", "currency") //
                         .optional() //
-                        .match("Fremde Spesen: -(?<fee>[\\d+,.]*) (?<currency>\\w{3}+) *")
-                        .assign((t, v) -> t.getPortfolioTransaction()
+                        .match("Eigene Spesen: -(?<fee>[\\d+,.-]*) (?<currency>\\w{3}+) *")
+                        .assign((t, v) -> {
+                          // System.out.println("****   Eigene Spesen: fee = " + v.get("fee")
+                          //         + ", currency = " + v.get("currency"));
+                          t.getPortfolioTransaction()
                                         .addUnit(new Unit(Unit.Type.FEE,
                                                         Money.of(asCurrencyCode(v.get("currency")),
-                                                                        asAmount(v.get("fee"))))))
+                                                                        asAmount(v.get("fee")))));
+                        })
+
+                        .section("fee", "currency") //
+                        .optional() //
+                        .match("Fremde Spesen: -(?<fee>[\\d+,.-]*) (?<currency>\\w{3}+) *")
+                        .assign((t, v) -> {
+                          // System.out.println("****   Fremde Spesen: fee = " + v.get("fee")
+                                  // + ", currency = " + v.get("currency"));
+                          t.getPortfolioTransaction()
+                                        .addUnit(new Unit(Unit.Type.FEE,
+                                                        Money.of(asCurrencyCode(v.get("currency")),
+                                                                        asAmount(v.get("fee")))));
+                        })
 
                         .section("gross", "currency", "exchangeRate") //
                         .optional() //
@@ -115,7 +137,7 @@ public class HelloBankPDFExtractor extends AbstractPDFExtractor
         DocumentType type = new DocumentType("Geschäftsart: Verkauf");
         this.addDocumentTyp(type);
 
-        Block block = new Block("Geschäftsart: Verkauf");
+        Block block = new Block("Gesch.ftsart: Verkauf", "^\\d+.\\d+.\\d{4}+ Seite \\d+");
         type.addBlock(block);
         block.set(new Transaction<BuySellEntry>()
 
@@ -135,7 +157,7 @@ public class HelloBankPDFExtractor extends AbstractPDFExtractor
                         .assign((t, v) -> t.setShares(asShares(v.get("shares"))))
 
                         .section("amount", "currency") //
-                        .match("Zu Gunsten .* (?<amount>[\\d+,.]*) (?<currency>\\w{3}+) *$").assign((t, v) -> {
+                        .match("Zu Gunsten .* (?<amount>[\\d+,.-]*) (?<currency>\\w{3}+) *$").assign((t, v) -> {
                             t.setAmount(asAmount(v.get("amount")));
                             t.setCurrencyCode(asCurrencyCode(v.get("currency")));
                         })
@@ -146,7 +168,7 @@ public class HelloBankPDFExtractor extends AbstractPDFExtractor
 
                         .section("fee", "currency") //
                         .optional() //
-                        .match("Grundgebühr: -(?<fee>[\\d+,.]*) (?<currency>\\w{3}+) *")
+                        .match("Fremde Spesen: -(?<fee>[\\d+,.-]*) (?<currency>\\w{3}+) *")
                         .assign((t, v) -> t.getPortfolioTransaction()
                                         .addUnit(new Unit(Unit.Type.FEE,
                                                         Money.of(asCurrencyCode(v.get("currency")),
@@ -154,7 +176,7 @@ public class HelloBankPDFExtractor extends AbstractPDFExtractor
 
                         .section("fee", "currency") //
                         .optional() //
-                        .match("Fremde Spesen: -(?<fee>[\\d+,.]*) (?<currency>\\w{3}+) *")
+                        .match("Grundgeb.hr: -(?<fee>[\\d+,.-]*) (?<currency>\\w{3}+) *")
                         .assign((t, v) -> t.getPortfolioTransaction()
                                         .addUnit(new Unit(Unit.Type.FEE,
                                                         Money.of(asCurrencyCode(v.get("currency")),
@@ -162,26 +184,31 @@ public class HelloBankPDFExtractor extends AbstractPDFExtractor
 
                         .section("fee", "currency") //
                         .optional() //
-                        .match("Eigene Spesen: -(?<fee>[\\d+,.]*) (?<currency>\\w{3}+) *")
+                        .match("Eigene Spesen: -(?<fee>[\\d+,.-]*) (?<currency>\\w{3}+) *")
                         .assign((t, v) -> t.getPortfolioTransaction()
                                         .addUnit(new Unit(Unit.Type.FEE,
                                                         Money.of(asCurrencyCode(v.get("currency")),
                                                                         asAmount(v.get("fee"))))))
 
+                        // Devisenkurs
                         .section("gross", "tax", "currency", "exchangeRate") //
-                        // .optional() //
+                        .optional() //
                         .match("Kurswert: (?<gross>[\\d+,.-]*) (?<currency>\\w{3}+) *") //
                         .match("Kapitalertragsteuer: -(?<tax>[\\d+,.-]*) \\w{3}+ *") //
                         .match("[\\d+,.-]* \\w{3}+ *") //
                         .match("Devisenkurs: (?<exchangeRate>[\\d+,.]*) \\(\\d+.\\d+.\\d{4}+\\) [\\d+,.]* \\w{3}+ *")
                         .assign((t, v) -> {
+                            PortfolioTransaction tx = t.getPortfolioTransaction();
+
                             long gross = asAmount(v.get("gross"));
                             long tax = asAmount(v.get("tax"));
+
                             String currency = asCurrencyCode(v.get("currency"));
                             BigDecimal exchangeRate = BigDecimal.ONE.divide(asExchangeRate(v.get("exchangeRate")), 10,
                                             RoundingMode.HALF_UP);
+                            // System.out.println("*****   Devisenkurs, gross = " + gross + ", tax = " + tax +
+                            //                   ", currency = " + currency + ", exchangeRate = " + exchangeRate);
 
-                            PortfolioTransaction tx = t.getPortfolioTransaction();
                             if (currency.equals(tx.getSecurity().getCurrencyCode()))
                             {
                                 long convertedGross = BigDecimal.valueOf(gross).multiply(exchangeRate)
@@ -203,13 +230,31 @@ public class HelloBankPDFExtractor extends AbstractPDFExtractor
                             }
                         })
 
+                        // Kapitalertragsteuer
+                        .section("tax", "currency") //
+                        .optional() //
+                        .match("Kapitalertragsteuer: -(?<tax>[\\d+,.-]*) (?<currency>\\w{3}+) *") //
+                        .assign((t, v) -> {
+                            // System.out.println("****   Kapitalertragsteuer: tax = " + v.get("tax")
+                            //        + ", currency = " + v.get("currency"));
+                            PortfolioTransaction tx = t.getPortfolioTransaction();
+                            if (!tx.getUnit(Unit.Type.TAX).isPresent())
+                            {
+                              // System.out.println("*****   Kapitalertragsteuer not present, adding it");
+                              tx.addUnit(new Unit(Unit.Type.TAX,
+                                                    Money.of(asCurrencyCode(v.get("currency")),
+                                                        asAmount(v.get("tax")))));
+                            }
+                        })
+
+
                         .wrap(BuySellEntryItem::new));
     }
 
     @SuppressWarnings("nls")
     private void addDividendTransaction()
     {
-        DocumentType type = new DocumentType("Geschäftsart: Ertrag", (context, lines) -> {
+        DocumentType type = new DocumentType("Gesch.ftsart: Ertrag", (context, lines) -> {
             Pattern exchangeRatePattern = Pattern.compile(
                             "Devisenkurs: (?<exchangeRate>[\\d+,.]*) \\(\\d+.\\d+.\\d{4}+\\) [\\d+,.]* \\w{3}+ *");
 
@@ -222,7 +267,7 @@ public class HelloBankPDFExtractor extends AbstractPDFExtractor
         });
         this.addDocumentTyp(type);
 
-        Block block = new Block("Geschäftsart: Ertrag");
+        Block block = new Block("Gesch.ftsart: Ertrag", "^\\d+.\\d+.\\d{4}+ Seite \\d+");
         type.addBlock(block);
 
         BiConsumer<AccountTransaction, Map<String, String>> taxProcessor = (t, v) -> {
@@ -308,7 +353,7 @@ public class HelloBankPDFExtractor extends AbstractPDFExtractor
 
                         .section("tax", "currency") //
                         .optional() //
-                        .match("KESt Ausländische Dividende: -(?<tax>[\\d+,.]*) (?<currency>\\w{3}+) *") //
+                        .match("KESt Ausl.ndische Dividende: -(?<tax>[\\d+,.]*) (?<currency>\\w{3}+) *") //
                         .assign(taxProcessor)
 
                         .section("tax", "currency") //
